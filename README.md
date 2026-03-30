@@ -19,6 +19,7 @@ Agora que ja sabe executar o arquivo, aqui estão as ações permitidas:
 
 Executa-se o arquivo utilizando `python3 task-cli.py` ou `./task-cli` seguido da
 ação `add` e da tarefa a ser atribuída
+
 Ex: `./task-cli add "estudar para a prova"`
 
 É importante que, caso a descrição da tarefa seja uma frase, ela deve ser
@@ -29,6 +30,7 @@ não há necessidade das aspas
 
 Executa-se o arquivo seguido da ação `update`, do id da tarefa que será
 atualizada e da nova descrição
+
 Ex: `./task-cli update 1 "fazer atividade"`
 
 Assim como para adicionar, é necessário colocar a descrição entre aspas caso ela
@@ -37,12 +39,15 @@ consista em uma frase
 ### Deletando tarefas
 
 Executa-se o arquivo seguido da ação `delete` e do id da tarefa a ser deletada
+
 Ex: `./task-cli delete 1`
 
 ### Marcando tarefas em andamento e concluída
 
 Executa-se o arquivo seguido da ação de marcação que deve ser feita
+
 Ex: `./task-cli mark-done 1`. Marca a tarefa com id 1 como concluída
+
 Ex: `./task-cli mark-in-progress 1`. Marca a tarefa com id 1 como em andamento
 
 ### Listando tarefas
@@ -50,6 +55,9 @@ Ex: `./task-cli mark-in-progress 1`. Marca a tarefa com id 1 como em andamento
 Caso o arquivo seja executado seguido apenas da `list`, é listada todas as
 tarefas, para listar as tarefas a partir do seu status, seja em andamento, a
 fazer ou conluída, adiciona-se o status da tarefa após o list
-Ex: `./task-cli list`. Lista todas
-Ex: `./task-cli list todo`. Tarefas a fazer
-Ex: `./task-cli list done`. 
+
+Ex: `./task-cli list`. Lista todas as tarefas
+
+Ex: `./task-cli list todo`. Lista as tarefas a fazer
+
+Ex: `./task-cli list done`. Lista as tarefas concluídas
